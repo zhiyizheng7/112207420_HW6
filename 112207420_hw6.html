@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>112207420_HW6_1A2B</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>112207420_HW6_1A2B</h1>
+    <input type="text" id="userGuess" placeholder="輸入4個不重複數字" maxlength="4">
+    <button onclick="checkGuess()">提交</button>
+    <div id="error" class="error"></div>
+    <div id="result">
+        <h2>作答結果</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>嘗試次數</th>
+                    <th>答案</th>
+                    <th>結果</th>
+                </tr>
+            </thead>
+            <tbody id="resultTable"></tbody>
+        </table>
+    </div>
+    <script src="112207420_hw6.js"></script>
+</body>
+</html>
